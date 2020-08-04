@@ -1,0 +1,25 @@
+<div class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-3">
+  <p class="h5 lh-condensed text-center mb-0 mt-1">{{ protocol.name }}</p>
+  {% if protocol.description %}
+    <p class="small text-secondary text-center mb-0 mt-1">{{ protocol.description }}</p>
+  {% endif %}
+  {% for url in protocol.urls %}
+  {% assign parts = url | split: "/" %}
+  {% assign name_parts = parts.last | split: "." %}
+  {% assign ext = name_parts.last | downcase %}
+  <a class="small text-center text-info mb-0 mt-1" href="{{ url }}">
+      {% if ext == 'pdf' %}
+        <i class="fas fa-file-pdf fa-lg mx-1"></i>
+      {% elsif ext == 'doc' or ext == 'docx' %}
+        <i class="fas fa-file-word fa-lg mx-1"></i>
+      {% elsif ext == 'xls' or ext == 'xlsx' %}
+        <i class="fas fa-file-excel fa-lg mx-1"></i>
+      {% elsif ext == 'ppt' or ext == 'pptx' %}
+        <i class="fas fa-file-powerpoint fa-lg mx-1"></i>
+      {% else %}
+        <i class="fas fa-file fa-lg mx-1"></i>
+      {% endif %}
+      {{ parts.last }}
+  </a>
+  {% endfor %}
+</div>

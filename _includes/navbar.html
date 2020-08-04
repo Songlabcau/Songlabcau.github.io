@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+    {% if page.categories.first != 'home' %}
+        <a href="/">
+        <object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
+        </a>
+        <a class="navbar-brand" href="/">Springer Lab</a>
+        {% endif %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            {% if page.categories.first == 'projects' %}
+                <li class="nav-item active">
+            {% else %}
+                <li class="nav-item">
+            {% endif %}
+                    <a class="nav-link" href="/projects/">Projects</a>
+                </li>
+            {% if page.categories.first == 'news' %}
+                <li class="nav-item active">
+            {% else %}
+                <li class="nav-item">
+            {% endif %}
+                    <a class="nav-link" href="/news/">News</a>
+                </li>
+            {% if page.categories.first == 'people' %}
+                <li class="nav-item active">
+            {% else %}
+                <li class="nav-item">
+            {% endif %}
+                    <a class="nav-link" href="/people/">People</a>
+                </li>
+            {% if page.categories.first == 'publications' %}
+                <li class="nav-item active">
+            {% else %}
+                <li class="nav-item">
+            {% endif %}
+                    <a class="nav-link" href="/publications/">Publications</a>
+                </li>
+            {% if page.categories.first == 'protocols' %}
+                <li class="nav-item dropdown active">
+            {% else %}
+                <li class="nav-item dropdown">
+            {% endif %}
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Miscellaneous</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/misc/about">About</a>
+                        <a class="dropdown-item" href="/misc/photos">Photos</a>
+                        <a class="dropdown-item" href="/misc/join">Positions</a>
+                        <a class="dropdown-item" href="/misc/protocols">Protocols</a>
+                    <a class="dropdown-item" href="/misc/contact">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
