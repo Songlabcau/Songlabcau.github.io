@@ -1,0 +1,189 @@
+---
+---
+
+@import "bootstrap/bootstrap";
+
+body {
+	padding-top: 65px;
+}
+
+@media (min-width: 992px) {
+	body {
+		padding-top: 65px;
+	}
+}
+
+.container {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
+h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
+h3, .h3 { font-size: ceil($font-size-base * 1.70); }  /* ~24px */
+h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
+h5, .h5 { font-size:  $font-size-base; }
+h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+	/* Museo */
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+	padding: 0px;
+}
+
+.biglogo {
+	width: 100px;
+	height: 100px;
+	padding: 0px;
+}
+
+.logobox {
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.navbar-brand {
+	font-size: 25px;
+	font-weight: 100;
+	/* Museo */
+}
+.navbar-nav {
+	font-size: 20px;
+	font-weight: 100;
+	/* Museo */
+}
+
+/* headings */
+
+.bigtitle {
+	font-size: 60px;
+	line-height: 55px;
+	font-weight: 100;
+	/* Museo */
+}
+
+.title {
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: 100;
+	/* Museo */
+}
+
+.bighead {
+	font-size: 32px;
+	font-weight: 300;
+	line-height:36px;
+	/* Museo */
+}
+
+.head {
+	font-size: 24px;
+	font-weight: 300;
+	line-height:30px;
+	/* Museo */
+}
+
+.smallhead {
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 23px;
+	/* Museo */
+}
+
+.note {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 18px;
+	/* Museo */
+}
+
+.smallnote {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 16px;
+	/* Museo */
+}
+
+.text-gray {
+	color: gray(200);
+}
+
+.text-dark-gray {
+	color: gray(800);
+}
+
+/* other */
+
+body {
+	font-weight: 300;
+}
+
+p {
+	font-weight: 300;
+}
+
+.hugespacer {
+	height: 50px;
+}
+
+.bigspacer {
+	height: 20px;
+}
+
+.spacer {
+	height: 10px;
+}
+
+.smallspacer {
+	height: 5px;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
+}
+
+.postbox {
+	min-height: 80px;
+}
+
+.paperbox {
+	min-height: 140px;
+}
+
+.projectbox {
+	min-height: 120px;
+}
+
+.memberbox {
+
+}
+
+.talkbox {
+	min-height: 100px;
+}
+
+.titlebox {
+	min-width: 300px;
+}
+
+.handlebox {
+	height: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
