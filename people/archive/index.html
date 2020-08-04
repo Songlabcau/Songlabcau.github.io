@@ -1,0 +1,101 @@
+---
+layout: default
+title: Springer Lab / People
+categories:
+ - people
+---
+
+<div class="bigspacer"></div>
+<div class="row justify-content-center">
+	<div class="col-md-auto">
+        <div class="btn-group">
+            <a href="/people/" class="btn btn-light" role="button">
+                Current Members
+            </a>
+            <a href="/people/archive" class="btn btn-light active" role="button">
+                Past Members
+            </a>
+        </div>
+	</div>
+</div>
+<div class="bigspacer"></div>
+
+{% assign current_members = "" | split: "" %}
+{% assign past_members = "" | split: "" %}
+{% for member in site.categories.people %}
+    {% if member.alumni == true %}
+        {% assign past_members = past_members | push:member %}
+    {% else %}
+        {% assign current_members = current_members | push:member %}
+    {% endif %}
+{% endfor %}
+
+{% for member in past_members reversed %}
+    {% assign loopindex = forloop.index | modulo: 3 %}
+    {% if loopindex == 1 or forloop.first %}
+        <div class="row">
+    {% endif %}
+	<div class="col-md-4">
+			<div class="card" style="width: 250px;">
+                <a href="{{ member.url }}">
+                    {% if member.image %}
+                        <img class="card-img-top" src="{{ member.image }}">
+                    {% else %}
+                        <img class="card-img-top" src="/images/null.png">
+                    {% endif %}
+                </a>
+ 			 	<div class="card-body">
+    				<h5 class="card-title"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></h5>
+    				<h6 class="card-subtitle mb-2 text-muted">{{ member.position }}</h6>
+		
+		{% if member.twitter %}
+			<a title="Twitter" class='text-dark' href="https://twitter.com/{{ member.twitter }}">
+			    <i class="fab fa-twitter fa-fw"></i>
+			</a>
+		{% endif %}
+		{% if member.orcid %}
+			<a title="ORCID" class='text-dark' href="{{ member.orcid }}">
+			    <i class="ai ai-orcid ai-fw"></i>
+			</a>
+		{% endif %}
+		{% if member.github %}
+			<a title="Github" class='text-dark' href="https://github.com/{{ member.github }}">
+			    <i class="fab fa-github fa-fw"></i>
+			</a>
+		{% endif %}
+		{% if member.scholar %}
+			<a title="Google Scholar" class='text-dark' href="http://scholar.google.com/citations?user={{ member.scholar }}">
+			    <i class="ai ai-google-scholar fa-fw"></i>
+			</a>
+		{% endif %}
+        {% if member.linkedin %}
+			<a title="Linkedin" class='text-dark' href="https://www.linkedin.com/in/{{ member.linkedin }}">
+			    <i class="fab fa-linkedin-in fa-fw"></i>
+			</a>
+		{% endif %}
+		{% if member.calendar %}
+			<a title='Calendar' class='text-dark' href="{{ member.calendar }}">
+			    <i class="fas fa-calendar-alt fa-fw"></i>
+			</a>
+		{% endif %}
+		{% if member.email %}
+		{% assign emailarray = member.email | split: '@' %}
+			<a title='Email' class='text-dark' href="mailto:{{ member.email }}">
+			    <i class="fas fa-envelope fa-fw"></i>
+			</a>
+		{% endif %}
+		{% if member.cv %}
+			<a title="CV" class='text-dark' href="{{ member.cv }}">
+			    <i class="ai ai-cv ai-fw"></i>
+			</a>
+		{% endif %}
+    				
+  				</div>
+			</div>
+        </div>
+    {% if loopindex == 0 or forloop.last %}
+        </div>
+		<div class="bigspacer"></div>
+		<div class="bigspacer"></div>
+    {% endif %}
+{% endfor %}

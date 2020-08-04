@@ -1,0 +1,181 @@
+---
+layout: default
+---
+{% assign member = page %}
+
+<div class="bigspacer"></div>
+<div class="card">
+    <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+            {% if member.image %}
+            <img class="card-img-left" width=200 src="{{ member.image }}">
+            {% endif %}
+        </div>
+        <div class="col-sm px-1">
+            <div class="card-body">
+            <div class="card-title bigtitle pull-right">{{ member.title }}</div>
+            <div class="card-subtitle smallhead mb-2 text-muted">{{ member.position }}</div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class='mt-0'>
+
+<div class="row">
+	<div class="col-md-3 ml-3">
+		{% if member.twitter %}
+		<div class="smallhead">
+			Twitter
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fab fa-twitter fa-fw"></i>
+			<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.orcid %}
+		<div class="smallhead">
+			ORCID
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="ai ai-orcid ai-fw"></i>
+			<a class="off" href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.scholar %}
+		<div class="smallhead">
+			Google Scholar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="ai ai-google-scholar ai-fw"></i>
+			<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.github %}
+		<div class="smallhead">
+			GitHub
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fab fa-github fa-fw"></i>
+			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+    {% if member.linkedin %}
+		<div class="smallhead">
+			Linkedin
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fab fa-linkedin-in fa-fw"></i>
+			<a class="off" href="https://www.linkedin.com/in/{{ member.linkedin }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.calendar %}
+		<div class="smallhead">
+			Calendar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fas fa-calendar-alt fa-fw"></i>
+			<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.email %}
+		{% assign emailarray = member.email | split: '@' %}
+		<div class="smallhead">
+			Email
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fas fa-envelope fa-fw"></i>
+			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.cv %}
+		<div class="smallhead">
+			CV
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="ai ai-cv ai-fw"></i>
+			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.website %}
+		<div class="smallhead">
+			Website
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fas fa-globe fa-fw"></i>
+			<a class="off" href="{{ member.website }}">{{ member.website }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+	</div>
+	<div class="col-md-8">
+		<div class="post">
+			{{ content }}
+		</div>
+
+		{% for project in site.categories.projects %}
+		{% if project.contributors contains member.title %}
+			{% assign projectsq = true %}
+		{% endif %}
+		{% endfor %}
+
+		{% if projectsq == true %}
+		<div class="bigspacer"></div>
+		<div class="head">Projects</div>
+		<div class="spacer"></div>
+		{% for project in site.categories.projects %}
+			{% assign present = false %}
+			{% for contributor in project.contributors %}
+		        {% if project.contributors contains member.title %}
+				    {% assign present = true %}
+				{% endif %}
+			{% endfor %}
+			{% if present == true %}
+				<p><a href="{{ project.url }}" class="off">{{ project.title }}</a>
+			{% endif %}
+		{% endfor %}
+		{% endif %}
+
+		{% assign lastname = member.title | split: ' ' | last %}
+		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
+		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+
+		{% for paper in site.categories.publications %}
+		{% if paper.authors contains searchstring %}
+		{% assign papersq = true %}
+		{% endif %}
+		{% endfor %}
+
+		{% if papersq == true %}
+		<div class="bigspacer"></div>
+		<div class="head">Publications</div>
+		<div class="spacer"></div>
+		{% for paper in site.categories.publications %}
+		{% if paper.authors contains searchstring %}
+		    <p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
+		{% endif %}
+		{% endfor %}
+		{% endif %}
+
+	</div>
+	<div class="col-md-1"></div>
+</div>
+</div>
+
+<div class="bigspacer"></div>

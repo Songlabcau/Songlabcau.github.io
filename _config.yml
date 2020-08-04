@@ -1,0 +1,50 @@
+name: Song Lab Research
+description: Science updates on maize
+url: https://Songlabcau.github.io
+
+markdown: kramdown
+permalink: /:categories/:title/
+future: true
+
+sass:
+  sass_dir: ./_sass
+  style: :compressed 
+
+plugins:
+  - jekyll-paginate
+
+exclude:
+  - "*.class"
+  - "*.cpp"
+  - "*.h"
+  - "*.hh"
+  - "*.ipynb"
+  - "*.jar"
+  - "*.java"
+  - "*.nb"
+  - "*.py"
+  - "*.R"
+  - "*.rb"
+  - "*.Rmd"
+  - "*.branches"
+  - "*.csv"
+  - "*.fasta"
+  - "*.kml"
+  - "*.log"
+  - "*.mcc"
+  - "*.newick"
+  - "*.nex"
+  - "*.tsv"
+  - "*.tips"
+  - "*.trees"
+  - "*.txt"
+  - "*.zip"
+  - "*.gz"
+  - "*.tiff"
+  - "*.xml"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+paginate_path: "/publications/page:num/"
+paginate: 5
+

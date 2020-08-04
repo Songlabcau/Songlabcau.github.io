@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<div class="bigspacer"></div>
+
+<div class="card">
+    <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+			{% if page.image %}
+			<img class="card-img-left" width=200 src="{{ page.image }}">
+			{% endif %}
+        </div>
+        <div class="col-sm px-0">
+            <div class="card-body">
+			    <div class="card-title title pull-right">{{ page.title }}</div>
+    			<div class="card-subtitle smallhead mb-2 text-muted">
+					{{ page.authors }}
+					{{ page.year }}.
+					{{ page.journal }}
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <hr class='mt-0'>
+    
+    <div class="row">
+        <div class="col-md-3">
+            <div class="glyphbox note pl-3">
+                {% if page.pdf %}
+                <div class="smallhead">
+                    PDF
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fas fa-file fa-fw"></i>
+                    <a class="off" href="{{ page.pdf }}">{{ page.pdf | split: '/' | last }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.supplement %}
+                <div class="smallhead">
+                    Supplement
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fas fa-paperclip fa-fw"></i>
+                    <a class="off" href="{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.doi %}
+                <div class="smallhead">
+                    DOI
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="ai ai-doi fa-fw"></i>
+                    <a class="off" href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.github %}
+                <div class="smallhead">
+                    GitHub
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fab fa-github fa-fw"></i>
+                    <a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://github.com/' | remove: 'https://github.com/' }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="post">
+                {{ content }}
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<div class="bigspacer"></div>

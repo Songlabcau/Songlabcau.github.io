@@ -1,0 +1,78 @@
+-
+  name: Access & Training
+  description: card access and safety training
+  urls:
+    - /pdfs/protocols/access_training.docx
+    - /pdfs/protocols/Lab_Safety_Plan.docx
+-
+  name: Common Solutions
+  description: common solutions used in lab
+  urls:
+    - /pdfs/protocols/common_solutions.docx
+-
+  name: DNA Extraction
+  description: extract DNA from plant tissues
+  urls:
+    - /pdfs/protocols/DNA_extraction_CTAB_dirty.docx
+    - /pdfs/protocols/DNA_extraction_CTAB_clean.docx
+-
+  name: PCR
+  description: PCR protocol
+  urls:
+    - /pdfs/protocols/PCR.docx
+-
+  name: Electrophorisis
+  description: gel pouring protocol
+  urls:
+    - /pdfs/protocols/gel_pouring.docx
+-
+  name: RNA Extration
+  description: RNA extraction using RNeasy Plant Mini Kit
+  urls:
+    - /pdfs/protocols/RNA_extraction.docx
+-
+  name: DNA/RNA Quantification
+  description: quantification of dsDNA/ssRNA using TECAN
+  urls:
+    - /pdfs/protocols/DNA_RNA_quantification/protocol.docx
+    - /pdfs/protocols/DNA_RNA_quantification/template.xlsx
+-
+  name: AgiSoft
+  description: AgiSoft photoscan protocol
+  urls:
+    - /pdfs/protocols/AgiSoft.docx
+-
+  name: Drone
+  description: drone flight instructions
+  urls:
+    - /pdfs/protocols/drone_flight.docx
+-
+  name: DNA Isolation
+  description: DNA isolation and purification
+  urls:
+    - /pdfs/protocols/DNA_isolation.docx
+-
+  name: DNA Sonication
+  description: sonication of DNA
+  urls:
+    - /pdfs/protocols/DNA_sonication.docx
+-
+  name: Methylated-DNA IP
+  description: methylated-DNA immunoprecipitation
+  urls:
+    - /pdfs/protocols/Methylated_DNA_IP.pdf
+-
+  name: Whole Genome Amplification
+  description: GenomePlex complete whole genome amplification Kit
+  urls:
+    - /pdfs/protocols/wga2bul.pdf
+-
+  name: NimbleGen Methylation Array
+  description: NimbleGen methylation array user guide
+  urls:
+    - /pdfs/protocols/NimbleGen_Methy_Array.pdf
+-
+  name: Soil
+  description: getting soil from greenhourse
+  urls:
+    - /pdfs/protocols/get_soil.docx

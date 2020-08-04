@@ -1,0 +1,42 @@
+<div class="row">
+	<div class="col-md-12">
+		<a class="bighead" href="/news/">Recent News</a>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="card-deck">
+	{% for post in site.categories.news limit:4 %}
+
+	{% for member in site.categories.people %}
+		{% if member.title == post.author %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}
+    
+    <div class="card">
+        <a class="text-dark" href="{{ post.url }}">
+	{% if post.image %}
+        <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}">
+    {% else %}
+        <img class="card-img-top" src="/images/null.png" alt="{{ post.title }}">
+    {% endif %}
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">
+                <i class="fas fa-comment fa-fw"></i>
+                <a class="text-dark" href="{{ post.url }}">
+                {{ post.title }}
+                </a>
+            </h5>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">
+        		Posted
+				{{ post.date | date: "%-d %b %Y" }}
+            </small>
+        </div>
+	</div>
+	{% endfor %}
+</div>

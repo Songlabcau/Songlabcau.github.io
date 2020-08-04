@@ -1,0 +1,41 @@
+---
+layout: default
+title: Springer Lab / Miscellaneous
+categories:
+ - Photos
+---
+
+<div class="bigspacer"></div>
+
+{% assign images = "" | split: "" %}
+
+{% for image in site.static_files %}
+    {% if image.path contains '/images/photos/' %}
+        {% assign images = images | push:image %}
+    {% endif %}
+{% endfor %}
+
+{% for image in images reversed %}
+    {% assign loopindex = forloop.index | modulo: 4 %}
+    {% if loopindex == 1 or forloop.first %}
+        <div class="row">
+    {% endif %}
+	    <div class="col-md-3">
+			<div class="thumbnail">
+                <a href="{{ image.path }}" target="_blank">
+                    <img class="img-thumbnail" src="{{ image.path }}" style="width:100%">
+                </a>
+ 			 	<div class="caption">
+    				<p></p>
+  				</div>
+			</div>
+        </div>
+    {% if loopindex == 0 or forloop.last %}
+        </div>
+		<div class="bigspacer"></div>
+		<div class="bigspacer"></div>
+    {% endif %}
+{% endfor %}
+
+
+<div class="bigspacer"></div>

@@ -1,0 +1,82 @@
+---
+layout: default
+title: Springer Lab / News
+categories: 
+ - news
+category: news
+---
+<div class="bigspacer"></div>
+
+<div class="row justify-content-center">
+	<div class="col-md-auto">
+        <div class="btn-group">
+            <a href="/news/" class="btn btn-light active" role="button">
+                <i class="fas fa-file fa-fw"></i> Detail view
+            </a>
+            <a href="/news/archive/" class="btn btn-light" role="button">
+                <i class="fas fa-list-ul fa-fw"></i> List view
+            </a>
+        </div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="post-list">
+
+{% for post in site.categories.news limit: 8 %}
+
+	{% for member in site.categories.people %}
+		{% if member.title == post.author %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}
+
+	<div class="blog-post">
+		<div class="row">
+			<div class="col-md-1"></div>	
+			<div class="col-md-10">
+				<div class="media">
+					<div class="media-body">
+						<div class="title media-heading">
+							<a href="{{ post.url }}" class="text-dark">{{ post.title }}</a>
+						</div>
+						<p>
+						<div class="smallhead">
+							{{ post.date | date: "%-d %b %Y" }}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>					
+		</div>
+
+		<div class="bigspacer"></div>
+
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">	
+				{% if post.image %}
+				{% if post.link %}
+				<a href="{{ post.link }}">
+					<img class="offset" src="{{ post.image }}">
+				</a>			
+				{% else %}
+				<img width=200 src="{{ post.image }}">
+				{% endif %}				
+				{% endif %}
+				<div class="post">
+					{{ post.content }}
+				</div>	
+			</div>			
+			<div class="col-md-1"></div>
+		</div>
+	
+		<div class="bigspacer"></div>
+		<div class="spacer"></div>	
+
+	</div>
+
+{% endfor %}
+
+</div>

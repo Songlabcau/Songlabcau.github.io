@@ -1,0 +1,35 @@
+---
+layout: default
+title: Springer Lab / Publications
+categories: 
+ - publications
+---
+<div class="bigspacer"></div>
+
+<div class='col-md-12 smallhead'>For a full list of publications from the Springer lab please visit <a href="https://scholar.google.com/citations?user=11RguYAAAAAJ&hl=en">Google Scholar</a>.</div>
+
+<div class="bigspacer"></div>
+
+<div class="list-group">
+{% for paper in site.categories.publications %}
+
+  <a href="{{ paper.url }}" class="list-group-item list-group-item-action">
+      <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+                {% if paper.image %}
+                    <img width=100 src="{{ paper.image }}">
+                {% else %}
+                    <img width=100 src="/images/null.png">
+                {% endif %}
+        </div>
+        <div class="col-sm px-3">
+            <div class="pull-right smallhead text-dark">{{ paper.title }}</div>
+            <div class="note my-2 text-muted">{{ paper.ref }}</div>
+        </div>
+      </div>
+  </a>
+
+{% endfor %}
+</div>
+
+<div class="bigspacer"></div>

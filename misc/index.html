@@ -1,0 +1,32 @@
+---
+layout: default
+title: Springer Lab / Miscellaneous
+categories:
+ - misc
+---
+
+<div class="bigspacer"></div>
+
+<div class="card-deck">
+
+{% for post in site.categories.misc reversed %}
+			<div class="card", style="width:100px">
+                <a href="{{ post.url }}">
+                    {% if post.image %}
+                        <img class="card-img-top" src="{{ post.image }}">
+                    {% else %}
+                        <img class="card-img-top" src="/images/null.png">
+                    {% endif %}
+                </a>
+ 			 	<div class="card-body">
+    				<h5 class="card-title"><a href="{{ post.url }}" class="text-dark">{{ post.title }}</a></h5>
+    				<h6 class="card-subtitle mb-2 text-muted">{{ member.url }}</h6>				
+  				</div>
+			</div>
+{% endfor %}
+
+</div>
+
+
+
+<div class="bigspacer"></div>

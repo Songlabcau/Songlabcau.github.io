@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{ page.title }}</title>
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>	
+	
+	<!-- jQuery -->
+	<script src="/js/jquery/jquery.min.js"></script>
+	
+    <!-- Bootstrap core JavaScript -->
+    <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <!-- Academicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- custom css -->
+    <link href="/css/custom.css" rel="stylesheet" media="screen">
+	
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    {% include navbar.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+    
+	{{ content }}
+	
+    </div>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+  </body>
+
+</html>

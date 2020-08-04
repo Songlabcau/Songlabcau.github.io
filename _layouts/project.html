@@ -1,0 +1,56 @@
+---
+layout: default
+---
+{% assign project = page %}
+
+<div class="bigspacer"></div>
+<div class="card">
+    <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+            {% if project.image %}
+            <img class="card-img-left" width=300 src="{{ project.image }}">
+            {% endif %}
+        </div>
+        <div class="col-sm px-1">
+            <div class="card-body">
+                <div class="card-title bigtitle pull-right">{{ project.title }}</div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class='mt-0'>
+
+<div class="row">
+	<div class="col-md-3 ml-3">
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			{% for contributor in project.contributors %}
+			{% assign name = contributor | downcase | strip %}
+			{% for member in site.categories.people %}
+			    {% assign mname = member.title | downcase | strip %}
+			    {% if name == mname %}
+			        {% assign url = member.url %}
+			    {% endif %}
+			{% endfor %}
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="{{ url }}">{{ contributor }}</a>
+ 			</div>
+ 			{% endfor %}
+		</div>
+		<div class="spacer"></div>
+
+	</div>
+	<div class="col-md-8">
+		<div class="post">
+			<p>
+			{{ content }}
+		</div>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+</div>
+
+<div class="bigspacer"></div>

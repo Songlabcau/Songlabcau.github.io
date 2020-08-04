@@ -1,0 +1,36 @@
+---
+layout: default
+title: Springer Lab / Projects
+categories: 
+ - projects
+---
+<div class="bigspacer"></div>
+
+<div class='col-md-12 smallhead'>Members of the Springer lab work on projects designed to understand the sources of variation in crop plants and to create frameworks for crop improvement.  The majority of the research in the Springer lab uses maize as a model system to make discoveries about basic aspects of genetics.  The sections below provide an overview of some of the major themes of research in the Springer lab and additional details can be found on the profiles of lab members. </div>
+
+<div class="bigspacer"></div>
+
+<div class="list-group">
+{% for project in site.categories.projects %}
+
+  <a href="{{ project.url }}" class="list-group-item list-group-item-action">
+      <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+            {% if project.image %}
+                <img style="width:50px;" src="{{ project.image }}">
+            {% else %}
+                <img style="width:50px;" src="/images/null.png">
+            {% endif %}
+        </div>
+        <div class="col-sm px-3">
+            <div class="pull-right smallhead text-dark">{{ project.title }}</div>
+            <div class="note my-2 text-muted">{{ project.description }}</div>
+            <div class="note my-2 text-muted">{{ project.contributors | join: ", " }}</div>
+        </div>
+      </div>
+  </a>
+
+{% endfor %}
+</div>
+
+<div class="bigspacer"></div>
