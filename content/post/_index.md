@@ -1,14 +1,9 @@
 ---
-title: Latest News
-
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
+title: Congradulations to Dr. Feng Yang!
 view: 2
-
-# Optional header image (relative to `static/media/` folder).
 header:
   caption: ""
   image: ""
+date: 2021-06-03T03:08:03.726Z
 ---
+Congra! Feng Yang passed his doctroral defance on May 30th!
