@@ -11,7 +11,7 @@ subtitle: ""
 design:
   columns: "1"
   background:
-    image: contact.jpg
+    image: ""
 hero_media: welcome.jpg
 ---
 The Songlab website has been lauched in June 2021.
