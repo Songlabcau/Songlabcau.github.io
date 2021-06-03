@@ -10,6 +10,8 @@ title: Welcome to Songlab!
 subtitle: ""
 design:
   columns: "1"
+  background:
+    image: contact.jpg
 hero_media: welcome.jpg
 ---
 The Songlab website has been lauched in June 2021.
