@@ -3,9 +3,13 @@ title: "An example journal article"
 authors:
 - admin
 - Robert Ford
+- Zeyang Ma
+- Rentao Song
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
+- ""
+- "corresponding"
 date: "2015-09-01T00:00:00Z"
 doi: ""
 

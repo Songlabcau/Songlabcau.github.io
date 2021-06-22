@@ -6,6 +6,9 @@
 main:
   - name: News
     url: post
+    weight: 10
+  - name: Research
+    url: research
     weight: 20
   - name: People
     url: people

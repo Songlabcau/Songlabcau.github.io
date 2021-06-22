@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/research/crop-genomics/</loc>
+  </url><url>
     <loc>/event/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
@@ -11,14 +13,14 @@
     <loc>/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/test2/</loc>
-    <lastmod>2021-06-03T03:46:53+00:00</lastmod>
-  </url><url>
-    <loc>/post/test1/</loc>
-    <lastmod>2021-06-03T03:30:18+00:00</lastmod>
+    <loc>/post/21-05-30-fengyang-defense/</loc>
+    <lastmod>2021-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2021-06-03T03:10:21+00:00</lastmod>
+    <lastmod>2021-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/20-12-02-icml-best-paper/</loc>
+    <lastmod>2020-12-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/20-12-01-wowchemy-prize/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
@@ -30,9 +32,6 @@
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/authors/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/author/nelson-bighetti/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication_types/</loc>
@@ -47,13 +46,22 @@
     <loc>/tags/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/author/zeyang-ma/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/publication-type/2/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/author/rentao-song/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/author/robert-ford/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/author/zeyang-ma/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication-type/1/</loc>
@@ -68,7 +76,19 @@
   </url><url>
     <loc>/people/</loc>
   </url><url>
+    <loc>/research/bioinformatics/</loc>
+  </url><url>
     <loc>/categories/</loc>
+  </url><url>
+    <loc>/research/genomic-breeding/</loc>
+  </url><url>
+    <loc>/research/human-health/</loc>
+  </url><url>
+    <loc>/research/population-genomics/</loc>
+  </url><url>
+    <loc>/research/</loc>
+  </url><url>
+    <loc>/research/systems-biology/</loc>
   </url><url>
     <loc>/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
   </url>
