@@ -24,6 +24,7 @@ content:
   - PhD. Candidates
 #  - Grad Students
 #  - Administration
+  - Visitors
   - Visiting Students
 #  - Alumni
 design:

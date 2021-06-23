@@ -19,38 +19,35 @@
     <loc>/post/</loc>
     <lastmod>2021-05-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/publication-type/2/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/author/dai-dawei/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publication/2021-dai/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publication_types/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publication/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/author/rentao-song/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/author/zeyang-ma/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/20-12-02-icml-best-paper/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/20-12-01-wowchemy-prize/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication-type/3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication/preprint/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/authors/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication_types/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/author/zeyang-ma/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication-type/2/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
@@ -61,14 +58,11 @@
     <loc>/author/robert-ford/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/author/zeyang-ma/</loc>
+    <loc>/tag/source-themes/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication-type/1/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/admin/</loc>
   </url><url>
@@ -90,6 +84,6 @@
   </url><url>
     <loc>/research/systems-biology/</loc>
   </url><url>
-    <loc>/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
+    <loc>/author/zeyang-ma/</loc>
   </url>
 </urlset>

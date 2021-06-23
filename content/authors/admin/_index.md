@@ -1,12 +1,12 @@
 ---
 # Display name
-title: Zeyang Ma
+title: Rentao Song
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Associate Professor
+role: Professor
 
 # Organizations/Affiliations
 organizations:
