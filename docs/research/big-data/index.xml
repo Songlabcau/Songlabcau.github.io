@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Omics analysis of maize endosperm | SongLab at China Agricultural University</title>
+    <link>/research/big-data/</link>
+      <atom:link href="/research/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <description>Omics analysis of maize endosperm</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2015 - 2021 SongLab_CAU</copyright>
+    <image>
+      <url>/media/icon_hu6d20e482c39c6bcbbec3359b6b3c4c5a_14920_512x512_fill_lanczos_center_2.png</url>
+      <title>Omics analysis of maize endosperm</title>
+      <link>/research/big-data/</link>
+    </image>
+    
+  </channel>
+</rss>

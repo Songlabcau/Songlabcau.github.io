@@ -5,12 +5,20 @@
     <link>/author/rentao-song/</link>
       <atom:link href="/author/rentao-song/index.xml" rel="self" type="application/rss+xml" />
     <description>Rentao Song</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2015 - 2021 SongLab_CAU</copyright><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2015 - 2021 SongLab_CAU</copyright><lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu6d20e482c39c6bcbbec3359b6b3c4c5a_14920_512x512_fill_lanczos_center_2.png</url>
+      <url>/author/rentao-song/avatar_hu478f95b61c48d0cd4848bed50de20c1d_143418_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Rentao Song</title>
       <link>/author/rentao-song/</link>
     </image>
+    
+    <item>
+      <title>Maize endosperm development</title>
+      <link>/publication/2021-dai/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/2021-dai/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An example journal article</title>

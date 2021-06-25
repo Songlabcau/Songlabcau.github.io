@@ -22,11 +22,11 @@ content:
 #  - Principal Investigators
   - Researchers
   - PhD. Candidates
-#  - Grad Students
+  - Grad Students
 #  - Administration
   - Visitors
   - Visiting Students
-#  - Alumni
+  - Alumni
 design:
   show_interests: false
   show_role: true

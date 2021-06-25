@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/research/crop-genomics/</loc>
+    <loc>/research/maize-kernel-development/</loc>
+  </url><url>
+    <loc>/research/big-data/</loc>
+  </url><url>
+    <loc>/research/chinamu-library/</loc>
   </url><url>
     <loc>/event/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
@@ -70,19 +74,9 @@
   </url><url>
     <loc>/people/</loc>
   </url><url>
-    <loc>/research/bioinformatics/</loc>
-  </url><url>
     <loc>/categories/</loc>
   </url><url>
-    <loc>/research/genomic-breeding/</loc>
-  </url><url>
-    <loc>/research/human-health/</loc>
-  </url><url>
-    <loc>/research/population-genomics/</loc>
-  </url><url>
     <loc>/research/</loc>
-  </url><url>
-    <loc>/research/systems-biology/</loc>
   </url><url>
     <loc>/author/zeyang-ma/</loc>
   </url>

@@ -6,9 +6,9 @@
 widget = "blank"  # See https://wowchemy.com/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-# weight = 200  # Order that this section will appear.
+weight = 10  # Order that this section will appear.
 
-title = "Bioinformatics"
+title = "Maize kernel development"
 subtitle = ""
 
 [design]
@@ -50,7 +50,7 @@ subtitle = ""
  css_class = ""
 +++
 
-#### An intelligent marker-selection system for crop (rice, maize, wheat) genetic breeding
+#### Key factors control kernel development
 
    Previous GWAS and resequencing analysis of crop germplasm has identified millions SNP markers that can be selected for breeding purposes. One of the projects in the lab is to collect all previous published GWAS datasets, and to perform a meta-GWAS analysis to define significant haplotype block, SNP marker and genes in association with important agronomic traits. Similar to the concept in precision medicine, the basic idea of this work is to build up the link at different levels of biological entities with a series of feature tags. When a user define a trait or a breeding goal, the system will be automatically searching the databases with feature tags and finally result in collecting a panel SNP markers that can be used for molecular breeding or calculation of breeding values.
 
